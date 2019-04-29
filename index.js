@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const hostname = '127.0.0.1'
 const hostnamedb = 'ds123399.mlab.com'
-const port = 80;
+const port = 80 || NODE_ENV;
 const app = require('./app');
 const db = 'mean';
 const portdb = 23399;
